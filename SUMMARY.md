@@ -36,3 +36,4 @@
     * [Code Handling](everscale-whitepaper/chapter-four-web-free/code-handling.md)
     * [Upgradability](everscale-whitepaper/chapter-four-web-free/upgradability.md)
   * [Conclusion The Evolution](everscale-whitepaper/conclusion-the-evolution.md)
+  * [References](readme/references.md)
