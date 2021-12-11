@@ -22,7 +22,7 @@ Gas would be paid for transactions within such WorkChain in Everscale native cur
 
 Another difference between Processing and Peripheral Workchains is their address space. The peripheral WorkChains may have special address prefixes while Processing Workchains share the same address space.
 
-One of the hardest problems in the multi-sharded approach has been inter-shard communications. If our system is heterogeneous, then we can assume it may not need any specific guarantees with respect to the messages that one such shard sends to another. Yet, it almost certainly creates quite an awful user and developer experience. That would be like adding a horizontal layered approach to the vertical layered approach discussed above. The more layers in which a developer application resides , the more difficult it is to use.
+One of the hardest problems in the multi-sharded approach has been inter-shard communications. If our system is heterogeneous, then we can assume it may not need any specific guarantees with respect to the messages that one such shard sends to another. Yet, it almost certainly creates quite an awful user and developer experience. That would be like adding a horizontal layered approach to the vertical layered approach discussed above. The more layers in which a developer application resides, the more difficult it is to use.
 
 Of course, it is immensely more difficult to design a homogeneous system. In a truly homogeneous system we want to abstract interaction of different system components between each other and the user. So for a smart contract in one thread of a particular WorkChain, it won’t make any difference sending messages to another smart contract, no matter which thread or WorkChain it resides in.&#x20;
 

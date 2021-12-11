@@ -63,11 +63,11 @@ Let us present a Soft Majority Fault Tolerance protocol (or SMFT for short):
 
 
 
-Will leave the Catchain BFT protocol intact as of the leadership selection and consensus phazes. The Thread validators will validate the block as they are now, just with the BFT threshold lowered to say 51% signatures, which will be used for preventing natural forking and  slashing in case of an attack.
+Will leave the Catchain BFT protocol intact as of the leadership selection and consensus phases. The Thread validators will validate the block as they are now, just with the BFT threshold lowered to say 51% signatures, which will be used for preventing natural forking and  slashing in case of an attack.
 
 In addition, let's have a protocol that samples some random nodes out of the WorkChain Validator set and requires them to validate every block (let’s call them “Verifiers”). The randomness must be calculated after the block candidate has been propagated. The protocol must be non-interactive, succinct and low latency.
 
-Let us concentrate on the block collation phaze, before the consensus, because in order for malicious validators to validate the malicious block it should be collated in the first place. If we prove that the malicious collation will be impractical, it won’t matter how many potentially malicious validators the thread has.
+Let us concentrate on the block collation phase, before the consensus, because in order for malicious validators to validate the malicious block it should be collated in the first place. If we prove that the malicious collation will be impractical, it won’t matter how many potentially malicious validators the thread has.
 
 Instead of broadcasting the block that has been already validated, we will ask collator to broadcast the block candidate to all nodes in the WorkChain. If a collator won’t do this, the block header won’t be included into Masterchain and the Collator will be slashed for data withholding.&#x20;
 
@@ -79,7 +79,7 @@ When receiving a new block broadcast from the collator, the validators calculate
 
 Validators will send a Block Receipt — a block hash signed by a BLS signature to all BPs. When a BP collects 51% of Receipts it will broadcast a multiplied Receipts and a numbered list of validators it got receipts from. The Validators that are not sending Block Receipts over some period of time or within a particular delay must be slashed.
 
-The MC will verify the broadcast proof message by decrypting the block hash using multiplication of  pubkeys of validators which provided receipts and comparing it with the a collator’s block hash. Passing the check for 51% of validators will finalize the block if no NACK messages have been received so far. Assuming there are 200 neighbors and that there are less than 50% of malicious validators, getting 50%+1 receipt guarantees that there is 2-200 probability for broadcast not to happen.
+The MC will verify the broadcast proof message by decrypting the block hash using multiplication of  pubkeys of validators which provided receipts and comparing it with the collator’s block hash. Passing the check for 51% of validators will finalize the block if no NACK messages have been received so far. Assuming there are 200 neighbors and that there are less than 50% of malicious validators, getting 50%+1 receipt guarantees that there is 2-200 probability for broadcast not to happen.
 
 Now that we proved 51% of validators got the block, let's choose a set of verifiers.&#x20;
 
