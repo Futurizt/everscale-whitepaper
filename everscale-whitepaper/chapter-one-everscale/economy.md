@@ -14,7 +14,7 @@ The reasons for that are discussed in “EVER and NEVER Binary system” paper:
 
 “In fact it would probably be correct to say that the money in the modern economy must gradually lose its value in order to be an attractive medium of exchange. Quite simply when a person holds on to something that loses its value over time, it will most likely try to exchange it with something more valuable. Such a person would not hesitate going to a shop and buying not only things they dearly need, such as pizza, but also things they do not need so much, such as entertainment, or things they don’t need at all, such as a new phone.”
 
-From a pure practical perspective, therefore, if EVERis a value capturing token, another native token should be created as an integral part of Everscale that would be used for money transactions and that would lose value while EVER would gain. As mentioned above such a token is NEVER. Some part of the EVER supply should be used as a NEVERstability fund as proposed in the “EVER and NEVER Binary system” paper and as will be described below.
+From a pure practical perspective, therefore, if EVER is a value capturing token, another native token should be created as an integral part of Everscale that would be used for money transactions and that would lose value while EVER would gain. As mentioned above such a token is NEVER. Some part of the EVER supply should be used as a NEVER stability fund as proposed in the “EVER and NEVER Binary system” paper and as will be described below.
 
 Since  EVER token is not money, it should not be used for network usage fee payments, or such fees will constantly diminish. In order to achieve that, the dynamic gas price should be introduced, but unlike in other blockchains, it should not be set forward by network validators. In general, letting validators decide on transaction inclusion, order and price, has been one of the worst ideas of our time.
 
@@ -53,7 +53,7 @@ Another aspect that needs to be discussed is a payment for empty blocks. After a
 
 All EVER s were organized at launch into three accounts we call “Givers”:  Validator, Developer and Governance Givers. The tokens from these Givers are distributed through the MTD mechanism by the community.&#x20;
 
-The Validator Giver should pay for every block validators produce (1T for shardblock and 1.7T for Masterblock, changeable only by the community decision if necessary). The total supply of tokens should be kept to around 2 bln EVERs. No new tokens should ever be issued. When Validator Giver runs out of tokens, presumably there will be no empty blocks.
+The Validator Giver should pay for every block validators produce (1E for shardblock and 1.7E for Masterblock, changeable only by the community decision if necessary). The total supply of tokens should be kept to around 2 bln EVERs. No new tokens should ever be issued. When Validator Giver runs out of tokens, presumably there will be no empty blocks.
 
 Following the malleability principle, the economic system of Everscale should accommodate for other forms of token distribution or public funding as the community would see fit from time to time. The new givers would be formed, funds would go to support experiments in funding models. It is our firm belief that the guiding principle to all these experiments, though, should be that no funds are distributed to a project without an entrepreneur behind it having vested interest in it and risk associated with it.
 
