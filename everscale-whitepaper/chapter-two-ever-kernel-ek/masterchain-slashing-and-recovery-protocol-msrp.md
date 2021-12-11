@@ -1,2 +1,13 @@
 # Masterchain Slashing and Recovery Protocol (MSRP)
 
+
+
+Let’s now consider MasterChain security. In Everscale EK 1.0 there are up to 100 nodes in the Masterchain. BFT consensus protocol with 66% of validators does not have enough security guarantee for a whole network to rely upon. For example if the network value is 10 bln and say 25% of all monetary supply is validating the network security guarantee is roughly 300-400 mln. that can be easily distributed between very few powerful entities. There is a big difference between a network secured by all its tokens, let alone its hashing power, and a network secured by a couple of entities. Fishermen won't help us here (yet again). If the Elector contract is running on the Masterchain the collusion of Masterchain nodes won't be prevented by submitting blames into a contract those same validators run. They will simply ignore it, change the contract and do whatever they want if that is what they are up to. There is a possible argument about social consensus and forks, etc, but we need to compare this network security with at least a Bitcoin which does not need to do any of these assumptions. By partitioning the network we are weakening its decentralization properties, now we need to correct this. As previously shown with the SMFT consensus protocol, we have increased the security of threads significantly.
+
+Therefore a protocol must be created that ensures — if any of the nodes in the network provides a proof of a materchain block invalidity the action can be taken by a simple majority of all validator nodes in the network regardless of exactly which Workchain they are currently validating. Let's make several assumptions:
+
+1. at least 51% of validators' stakes in the network are honest
+2. all nodes in the network must receive all Masterchain blocks
+3. validators representing 51% of stakes can ban any validator from the network regardless of what chain the other 49% are currently validating
+
+Once 51% of validator stakes realise the majority of Masterchain validators are Byzantine they need to send a blame with proof to smart contracts which are not controlled by a Masterchain. This kind of assumption dictates a very different Elector contract design. Such an Elector contract should be distributed; its addresses reside in the chains where validators owning them reside. The distributed consensus should be formed between these smart contracts. Without such a consensus no Workchain or Masterchain could function. In our example, if a Masterchain Elector contract can not form a consensus with other Workchain Elector contracts, they will simply elect new Masterchain nodes and continue without the rogue validators.&#x20;
