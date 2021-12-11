@@ -25,3 +25,9 @@ Special thanks goes to all those who contributed to editing: Eugene Morozov, Joa
 ![](.gitbook/assets/image.png)
 
 This Whitepaper is licensed under [Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) Creative Commons License](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+
+
+Download a PDF:
+
+{% file src=".gitbook/assets/Everscale Whitepaper.pdf" %}
