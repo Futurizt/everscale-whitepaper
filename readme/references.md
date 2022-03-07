@@ -44,7 +44,7 @@
 
 \[22] Boris Ivanovsky. Tonix. URL: https://github.com/tonlabs/tonix.&#x20;
 
-\[23] Jehan-Francois Paris and Thomas J. E. Schwarz. Merkle Hash Grids Instead of Merkle Trees. URL: https://www.researchgate.net/publication/344603589.&#x20;
+\[23] Jehan-Francois Paris and Thomas J. E. Schwarz. Merkle Hash Grids Instead of Merkle Trees. URL: https://www.researchgate.net/publication/344603589;
 
 \[24] The LLVM Compiler Infrastructure. URL: https://llvm.org/.&#x20;
 
